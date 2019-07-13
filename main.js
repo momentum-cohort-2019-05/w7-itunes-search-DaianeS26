@@ -10,10 +10,11 @@ function musicNode(music){
     const musicDiv = document.createElement('div')
     musicDiv.classList.add('music')
     musicDiv.innerHTML = `
+        <div class="w-30 center tc fl-l pa4 near-black">
         <h3>${music.trackName}</h3>
-        <p>Album: ${music.collectionName}</p>
         <img src="${music.artworkUrl100}">
-        <p><input class="playback br2" id="playback" type="button" src="${music.previewUrl}" value="Play"></p>`
+        <p><input class="playback f4 dim br3 ph3 pv2 mb2 dib white bg-dark-gray size" id="playback" type="button" src="${music.previewUrl}" value="Play"></p>
+        </div>`
         // console.log(music.previewUrl)
     
     return musicDiv
@@ -22,25 +23,10 @@ function musicNode(music){
 
 const playSong = document.querySelector("#audio")
 const songSource = document.querySelector('#music-source')
+const cors = "https://cors-anywhere.herokuapp.com/"
 
 
-// function playMusic(){
-//     songSource.src = playback.src
-//     playSong.load()
-//     songSource.play()
-
-// }
-
-// function displayMusicData (musicUrl){
-//     fetch(musicUrl)
-//     .then(res => res.json())
-//     .then(function (data){
-//         const dataDisplay = q('#music-data')
-//         dataDisplay.innerHTML = `
-//             <h3> More info about ${data.artistName}</h3>`
-
-//     })
-// }
+// Main execution
 
 document.addEventListener('DOMContentLoaded', function(){
     q('#music-results').addEventListener('click', function(event){
@@ -55,10 +41,10 @@ document.addEventListener('DOMContentLoaded', function(){
     q('form').addEventListener('submit', function (event){
         event.preventDefault()
         const searchTerm = q('#music-name').value
-        const url = `https://itunes-api-proxy.glitch.me/search?term=${encodeURIComponent(searchTerm)}`
+        const url = `https://itunes-api-proxy.glitch.me/search?term=${encodeURIComponent(searchTerm)}&limit=9`
         const resultsDiv = q('#music-results')
     
-        fetch(url)
+        fetch(cors + url)
             .then(function (response) {
                 return response.json()
             })

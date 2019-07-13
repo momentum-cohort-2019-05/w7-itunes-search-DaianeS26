@@ -12,26 +12,25 @@
 <body class="mw-100">
         <!-- header -->
         <header class="avenir white">
-                <div class="cover bg-left bg-center-l" style="background-image: url(https://tinyurl.com/y538cgyc)">
-                  <div class="bg-black-60 pb5 pb6-m pb7-l">
+                <div class="cover bg-left bg-center-l new-height" style="background-image: url(https://tinyurl.com/y538cgyc)">
+                  <div class="bg-black-60 pb5 pb6-m pb7-l new-height">
                     <nav class="dt w-100 mw8 center"> 
                       <!-- <div class="dtc w2 v-mid pa3">
                         <a href="/" class="dib w2 h2 pa1 ba b--white-90 grow-large border-box">
                           <svg class="link white-90 hover-white" data-icon="skull" viewBox="0 0 32 32" style="fill:currentcolor"><title>skull icon</title><path d="M16 0 C6 0 2 4 2 14 L2 22 L6 24 L6 30 L26 30 L26 24 L30 22 L30 14 C30 4 26 0 16 0 M9 12 A4.5 4.5 0 0 1 9 21 A4.5 4.5 0 0 1 9 12 M23 12 A4.5 4.5 0 0 1 23 21 A4.5 4.5 0 0 1 23 12"></path></svg>
                         </a>
                       </div> -->
-                      <div class="dtc v-mid tr pa3">
+                      <!-- <div class="dtc v-mid tr pa3">
                         <a class="f6 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="/" >How it Works</a> 
                         <a class="f6 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="/" >About</a> 
                         <a class="f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba" href="/" >Sign Up</a> 
-                      </div>
-                    </nav> 
+                      </div> -->
+                   
                     <!-- //Audio and Search part -->
                     <div class="tc-l mt4 mt5-m mt6-l ph3">
                        
-                        
                             <form>
-                                <div class="avenir f3 center tc"> 
+                                <div class="avenir f3 center tc white"> 
                                 <h1><label for="music-name">Search iTunes</label> </h1>
                                 <input class="br3 w-50 f3"type="text" id="music-name">
                                 <p><button class="f2 dim br3 ph3 pv2 mb2 dib white bg-black size" type="submit">Search</button></p>
@@ -41,17 +40,18 @@
                             <div class="f3 center tc bg-grey mt5" >
                                     <figure>
                                         <!-- <figcaption>Listen to your favorite artist or band:</figcaption> -->
-                                        <audio controls='controls' class='music-bar' id='audio'><source id='music-source' class='' src="" type='audio/mpeg'/></audio>
+                                        <audio controls='controls' class='center tc w-50' id='audio'><source id='music-source' class='' src="" type='audio/mpeg'/></audio>
                                     </figure>
-                             </div>
+                            </div>
                     </div>
                   </div>
                 </div> 
+            </nav> 
               </header>
 <main>
-    <div class="flex avenir center tc mt5">
-            <section class="w-50" id="music-results"></section>
-            <section class="w-50" id="music-data"></section>
+    <div class="flex avenir w-100 center tc">
+            <section class="center tc w-90" id="music-results"></section>
+            <!-- <section class="w-50" id="music-data"></section> -->
     </div>
 </main>
 
