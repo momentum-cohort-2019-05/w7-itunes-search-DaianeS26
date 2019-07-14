@@ -1,3 +1,8 @@
+const playSong = document.querySelector("#audio")
+const songSource = document.querySelector('#music-source')
+const cors = "https://cors-anywhere.herokuapp.com/"
+
+
 function q (sel){
     return document.querySelector(sel)
 }
@@ -21,9 +26,7 @@ function musicNode(music){
 
 }
 
-const playSong = document.querySelector("#audio")
-const songSource = document.querySelector('#music-source')
-const cors = "https://cors-anywhere.herokuapp.com/"
+
 
 
 // Main execution
@@ -57,4 +60,11 @@ document.addEventListener('DOMContentLoaded', function(){
                 }
         })
     })
+
+    // q('#music-name').addEventListener('focus', function(){
+    //     const clearField = q('#music-name')
+    //     if (clearField.value === 'value' ){
+    //         clearField.classList = 'blue';
+    //     }
+    // })
 })
