@@ -13,12 +13,12 @@ function qs(sel){
 
 function musicNode(music){
     const musicDiv = document.createElement('div')
-    musicDiv.classList.add('music')
+    musicDiv.classList.add('music', 'center', 'tc')
     musicDiv.innerHTML = `
         <div class="w-30 center tc fl-l pa4 near-black">
         <h3>${music.trackName}</h3>
         <img src="${music.artworkUrl100}">
-        <p><input class="playback f4 dim br3 ph3 pv2 mb2 dib white bg-dark-gray size" id="playback" type="button" src="${music.previewUrl}" value="Play"></p>
+        <p><input class="playback f4 dim br4 ph3 pv2 mb2 dib white bg-blue size" id="playback" type="button" src="${music.previewUrl}" value="Play"></p>
         </div>`
         // console.log(music.previewUrl)
     
