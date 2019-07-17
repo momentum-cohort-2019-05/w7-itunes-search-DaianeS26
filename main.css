@@ -1,16 +1,18 @@
-/* .size{
-    width: 20rem;
-    height: 20rem;
-} */
+body{
+    box-flex: 0;
+}
 
 
 .new-height{
     height: 400px;
 }
 
-/* .music-div{
+/* .music{
+    height: 250px;
+    width: 250px;
+    padding-left: 100px;
+    margin-bottom: 70px;
     float: left;
-    width: 33%;
-    padding: 5px;
+    vertical-align: bottom;
+    text-align: center;
 } */
-
