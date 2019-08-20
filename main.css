@@ -1,3 +1,4 @@
+/* General styling */
 * {
     margin: 0;
     padding: 0;
@@ -16,8 +17,10 @@ body{
     -webkit-box-shadow: 2px 3px 5px 0px rgba(36,69,99,1);
     -moz-box-shadow: 2px 3px 5px 0px rgba(36,69,99,1);
     box-shadow: 2px 3px 5px 0px rgba(36,69,99,1);
-
 }
+
+/* main content
+mobile first */
 
 .img-div{
     margin-top: 1em;
@@ -32,55 +35,60 @@ body{
 
 }
 
+/* Media queries for larger screens */
+
+/* two columns */
 
 @media screen and (max-width:768px) and (min-width: 480px){
 
-   .flex-container{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    margin-top: 2em;
-  }
+    .flex-container{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-top: 2em;
+    }
 
-  .div-grid{
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    
- }
+    .div-grid{
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
 
-.flex-item{
-    margin-top: 1em;    
-    padding: 1.2em;
-    width: 50%; 
+    .flex-item{
+        margin-top: 1em;    
+        padding: 1.2em;
+        width: 50%; 
 
- }
+    }
 
 
 
 }
 
+/* four columns */
+
 @media screen and (min-width: 769px) {
 
-   .flex-container{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    margin-top: 2em;
-  }
+    .flex-container{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-top: 2em;
+    }
 
-.div-grid{
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    
- }
+    .div-grid{
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
 
-.flex-item{
-    margin-top: 1em;    
-    padding: 1.2em;
-    width: 24%; 
+    .flex-item{
+        margin-top: 1em;    
+        padding: 1.2em;
+        width: 24%; 
 
- }
+    }
 
 }
