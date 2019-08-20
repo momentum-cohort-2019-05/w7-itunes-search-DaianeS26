@@ -1,18 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body{
     box-flex: 0;
+    background: #fafafa;
+    
 }
 
-
+/* header img */
 .new-height{
     height: 400px;
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(36,69,99,1);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(36,69,99,1);
+    box-shadow: 2px 3px 5px 0px rgba(36,69,99,1);
+
 }
 
-/* .music{
-    height: 250px;
-    width: 250px;
-    padding-left: 100px;
-    margin-bottom: 70px;
-    float: left;
-    vertical-align: bottom;
+.img-div{
+    margin-top: 1em;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.flex-container{
     text-align: center;
-} */
+    margin-top: 2em;
+    padding: 1.6em;
+
+}
+
+
+@media screen and (max-width:768px) and (min-width: 480px){
+
+   .flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .div-grid{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    
+ }
+
+.flex-item{
+    margin-top: 1em;    
+    padding: 1.2em;
+    width: 50%; 
+
+ }
+
+
+
+}
+
+@media screen and (min-width: 769px) {
+
+   .flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+.div-grid{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    
+ }
+
+.flex-item{
+    margin-top: 1em;    
+    padding: 1.2em;
+    width: 24%; 
+
+ }
+
+}

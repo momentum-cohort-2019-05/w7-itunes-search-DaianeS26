@@ -13,13 +13,14 @@ function qs(sel){
 
 function musicNode(music){
     const musicDiv = document.createElement('div')
-    musicDiv.classList.add('music', 'center', 'tc', 'near-black','w-25-ns', 'ma2','fl-l', 'w-50')
-        if (music.trackName.length >= 20) {
-            music.trackName = music.trackName.substring(0, 20) + "..."
+    // musicDiv.classList.add('music', 'center', 'tc', 'near-black','w-25-ns', 'ma2','fl-l', 'w-50')
+    musicDiv.classList.add('music', 'flex-item')
+        if (music.trackName.length >= 15) {
+            music.trackName = music.trackName.substring(0, 15) + "..."
         }
     musicDiv.innerHTML = `
         <h3>${music.trackName}</h3>
-        <img class='mt2 br3'src="${music.artworkUrl100}">
+        <img class='img-div'src="${music.artworkUrl100}">
         <p><input class="playback f4 dim br4 ph3 pv2 mb2 dib white bg-blue size" id="playback" type="button" src="${music.previewUrl}" value="Play"></p>`
         // console.log(music.previewUrl)
     
@@ -27,6 +28,7 @@ function musicNode(music){
 
 }
 
+ // <img class='mt2 br3'src="${music.artworkUrl100}">
 
 
 
@@ -45,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function(){
     q('form').addEventListener('submit', function (event){
         event.preventDefault()
         const searchTerm = q('#music-name').value
-        const url = `https://itunes-api-proxy.glitch.me/search?term=${encodeURIComponent(searchTerm)}&limit=20`
+        const url = `https://itunes-api-proxy.glitch.me/search?term=${encodeURIComponent(searchTerm)}&limit=40`
         const resultsDiv = q('#music-results')
     
         fetch(cors + url)

@@ -22,11 +22,11 @@
                                 <div class="avenir f3 center tc white"> 
                                 <h1><label for="music-name">Sample iTunes</label> </h1>
                                 <input class="br3 w-50 f3"type="text" id="music-name" onfocus="if(this.value != '') { this.value = ''; }">
-                                <p><button class="f2 dim br3 ph3 pv2 mt2 mb2 dib white bg-black size" type="submit">Search</button></p>
+                                <p><button class="f2 dim br3 ph3 pv2 mt3 mb2 dib white bg-black size" type="submit">Search</button></p>
                             </div>
                             </form>
 
-                            <div class="f3 center tc bg-grey mt5" >
+                            <div class="f3 center tc bg-grey mt5 mb2" >
                                     <figure>
                                         <!-- <figcaption>Listen to your favorite artist or band:</figcaption> -->
                                         <audio controls='controls' class='br2 center tc w-50' id='audio'><source id='music-source' class='' src="" type='audio/mpeg'/></audio>
@@ -38,8 +38,11 @@
             </nav> 
               </header>
 <main>
-    <div class="avenir w-90 center">
+    <!-- <div class="avenir w-90 center">
             <section class="cf" id="music-results"></section>
+    </div> -->
+    <div class='avenir flex-container'>
+      <div class='div-grid' id="music-results"></div>
     </div>
 </main>
 
